@@ -1,13 +1,13 @@
-/*
-* Template Name: Learner
-* Template Author: Untree.co
-* Template License: https://creativecommons.org/licenses/by/3.0/
-* Author URI: https://untree.co/
+/* 
+Template Name: Learner
+Template Author: Untree.co
+Template License: https://creativecommons.org/licenses/by/3.0/
+Author URI: https://untree.co/
 
-* Twitter: https://twitter.com/Untree_co
-* Facebook: https://web.facebook.com/Untree.co/
-* Pinterest: https://pinterest.com/Untree_co/
-*/
+Twitter: https://twitter.com/Untree_co
+Facebook: https://web.facebook.com/Untree.co/
+Pinterest: https://pinterest.com/Untree_co/ */
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
@@ -1260,7 +1260,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .img-wrap-2 .dotted:before {
     position: absolute;
     content: "";
-    background-image: url("../images/dotted.png");
+    /* background-image: url("../images/dotted.png"); */
     height: 273px;
     width: 313px;
     z-index: -1;

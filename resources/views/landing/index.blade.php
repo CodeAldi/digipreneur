@@ -1,9 +1,13 @@
-<!-- /*
-* Template Name: Learner
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+{{-- 
+Template Name: Learner
+Template Author: Untree.co
+Template License: https://creativecommons.org/licenses/by/3.0/
+Author URI: https://untree.co/
+
+Twitter: https://twitter.com/Untree_co
+Facebook: https://web.facebook.com/Untree.co/
+Pinterest: https://pinterest.com/Untree_co/ --}}
+
 <!doctype html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Untree.co">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{{ asset('landing/favicon.png') }}">
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -23,15 +27,15 @@
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('landing/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
 
     <title>Learner Free Bootstrap Template by Untree.co</title>
 </head>
@@ -120,7 +124,7 @@
     </nav>
 
 
-    <div class="untree_co-hero overlay" style="background-image: url('images/hero-img-1-min.jpg');">
+    <div class="untree_co-hero overlay" style="background-image: url('landing/images/hero-img-1-min.jpg');">
 
 
         <div class="container">
@@ -285,7 +289,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
                     <figure class="img-wrap-2">
-                        <img src="images/teacher-min.jpg" alt="Image" class="img-fluid">
+                        <img src="landing/images/teacher-min.jpg" alt="Image" class="img-fluid">
                         <div class="dotted"></div>
                     </figure>
 
@@ -373,7 +377,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="custom-media">
-                        <a href="#"><img src="images/img-school-1-min.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#"><img src="landing/images/img-school-1-min.jpg" alt="Image" class="img-fluid"></a>
                         <div class="custom-media-body">
                             <div class="d-flex justify-content-between pb-3">
                                 <div class="text-primary"><span class="uil uil-book-open"></span> <span>43 lesson</span>
@@ -391,7 +395,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="custom-media">
-                        <a href="#"><img src="images/img-school-2-min.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#"><img src="landing/images/img-school-2-min.jpg" alt="Image" class="img-fluid"></a>
                         <div class="custom-media-body">
                             <div class="d-flex justify-content-between pb-3">
                                 <div class="text-primary"><span class="uil uil-book-open"></span> <span>43 lesson</span>
@@ -409,7 +413,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="custom-media">
-                        <a href="#"><img src="images/img-school-3-min.jpg" alt="Image" class="img-fluid"></a>
+                        <a href="#"><img src="landing/images/img-school-3-min.jpg" alt="Image" class="img-fluid"></a>
                         <div class="custom-media-body">
                             <div class="d-flex justify-content-between pb-3">
                                 <div class="text-primary"><span class="uil uil-book-open"></span> <span>43 lesson</span>
@@ -429,7 +433,7 @@
         </div>
     </div>
 
-    <div class="untree_co-section pt-0 bg-img overlay" style="background-image: url('images/img-school-1-min.jpg');">
+    <div class="untree_co-section pt-0 bg-img overlay" style="background-image: url('landing/images/img-school-1-min.jpg');">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-lg-7">
@@ -481,7 +485,7 @@
                     <div class="bg-1"></div>
                     <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
                         <span class="play-wrap"><span class="icon-play"></span></span>
-                        <img src="images/img-school-4-min.jpg" alt="Image" class="img-fluid rounded">
+                        <img src="landing/images/img-school-4-min.jpg" alt="Image" class="img-fluid rounded">
                     </a>
                 </div>
             </div>
@@ -501,7 +505,7 @@
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="media-h d-flex h-100">
                         <figure>
-                            <img src="images/img-school-1-min.jpg" alt="Image">
+                            <img src="landing/images/img-school-1-min.jpg" alt="Image">
                         </figure>
                         <div class="media-h-body">
                             <h2 class="mb-3"><a href="#">Education for Tomorrow's Leaders</a></h2>
@@ -516,7 +520,7 @@
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="media-h d-flex h-100">
                         <figure>
-                            <img src="images/img-school-2-min.jpg" alt="Image">
+                            <img src="landing/images/img-school-2-min.jpg" alt="Image">
                         </figure>
                         <div class="media-h-body">
                             <h2 class="mb-3"><a href="#">Enroll Your Kids This Summer to get 30% off</a></h2>
@@ -605,7 +609,7 @@
                                     Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                                     at the coast of the Semantics, a large language ocean.&rdquo;</p>
                                 <div class="author">
-                                    <img src="images/person_1.jpg" alt="Free template by TemplateUX">
+                                    <img src="landing/images/person_1.jpg" alt="Free template by TemplateUX">
                                     <h3>John Doe</h3>
                                     <p class="position">CEO, Founder</p>
                                 </div>
@@ -621,7 +625,7 @@
                                     and the subline of her own road, the Line Lane. Pityful a rethoric question ran over
                                     her cheek, then she continued her way.&rdquo;</p>
                                 <div class="author">
-                                    <img src="images/person_2.jpg" alt="Free template by TemplateUX">
+                                    <img src="landing/images/person_2.jpg" alt="Free template by TemplateUX">
                                     <h3>James Woodland</h3>
                                     <p class="position">Designer at Facebook</p>
                                 </div>
@@ -636,7 +640,7 @@
                                     necessary regelialia. It is a paradisematic country, in which roasted parts of
                                     sentences fly into your mouth.&rdquo;</p>
                                 <div class="author">
-                                    <img src="images/person_3.jpg" alt="Free template by TemplateUX">
+                                    <img src="landing/images/person_3.jpg" alt="Free template by TemplateUX">
                                     <h3>Rob Smith</h3>
                                     <p class="position">Product Designer at Twitter</p>
                                 </div>
@@ -656,7 +660,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 mr-auto mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                    <img src="images/img-school-5-min.jpg" alt="image" class="img-fluid">
+                    <img src="landing/images/img-school-5-min.jpg" alt="image" class="img-fluid">
                 </div>
                 <div class="col-lg-7 ml-auto" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="line-bottom mb-4">Why Choose Us</h3>
@@ -676,7 +680,7 @@
                                 <div class="accordion-body">
                                     <div class="d-flex">
                                         <div class="accordion-img mr-4">
-                                            <img src="images/img-school-1-min.jpg" alt="Image" class="img-fluid">
+                                            <img src="landing/images/img-school-1-min.jpg" alt="Image" class="img-fluid">
                                         </div>
                                         <div>
                                             <p>Far far away, behind the word mountains, far from the countries Vokalia
@@ -700,7 +704,7 @@
                                 <div class="accordion-body">
                                     <div class="d-flex">
                                         <div class="accordion-img mr-4">
-                                            <img src="images/img-school-2-min.jpg" alt="Image" class="img-fluid">
+                                            <img src="landing/images/img-school-2-min.jpg" alt="Image" class="img-fluid">
                                         </div>
                                         <div>
                                             <p>Far far away, behind the word mountains, far from the countries Vokalia
@@ -724,7 +728,7 @@
                                 <div class="accordion-body">
                                     <div class="d-flex">
                                         <div class="accordion-img mr-4">
-                                            <img src="images/img-school-3-min.jpg" alt="Image" class="img-fluid">
+                                            <img src="landing/images/img-school-3-min.jpg" alt="Image" class="img-fluid">
                                         </div>
                                         <div>
                                             <p>When she reached the first hills of the Italic Mountains, she had a last
@@ -790,22 +794,22 @@
                         <h3>Gallery</h3>
                         <ul class="instafeed instagram-gallery list-unstyled">
                             <li><a class="instagram-item" href="images/gal_1.jpg" data-fancybox="gal"><img
-                                        src="images/gal_1.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_1.jpg" alt="" width="72" height="72"></a>
                             </li>
                             <li><a class="instagram-item" href="images/gal_2.jpg" data-fancybox="gal"><img
-                                        src="images/gal_2.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_2.jpg" alt="" width="72" height="72"></a>
                             </li>
                             <li><a class="instagram-item" href="images/gal_3.jpg" data-fancybox="gal"><img
-                                        src="images/gal_3.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_3.jpg" alt="" width="72" height="72"></a>
                             </li>
                             <li><a class="instagram-item" href="images/gal_4.jpg" data-fancybox="gal"><img
-                                        src="images/gal_4.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_4.jpg" alt="" width="72" height="72"></a>
                             </li>
                             <li><a class="instagram-item" href="images/gal_5.jpg" data-fancybox="gal"><img
-                                        src="images/gal_5.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_5.jpg" alt="" width="72" height="72"></a>
                             </li>
                             <li><a class="instagram-item" href="images/gal_6.jpg" data-fancybox="gal"><img
-                                        src="images/gal_6.jpg" alt="" width="72" height="72"></a>
+                                        src="landing/images/gal_6.jpg" alt="" width="72" height="72"></a>
                             </li>
                         </ul>
                     </div> <!-- /.widget -->
@@ -846,16 +850,16 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{{ asset('landing/js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ asset('landing/js/popper.min.js') }}"></script>
+    <script src="{{ asset('landing/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('landing/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.animateNumber.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.fancybox.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.sticky.js') }}"></script>
+    <script src="{{ asset('landing/js/aos.js') }}"></script>
+    <script src="{{ asset('landing/js/custom.js') }}"></script>
 
 </body>
 
