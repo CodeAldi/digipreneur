@@ -55,7 +55,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
 
-                <a href="#" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll Now</a>
+                <a href="{{ route('login') }}" class="btn-book btn btn-secondary btn-sm menu-absolute">Enroll Now</a>
 
                 <a href="#"
                     class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"

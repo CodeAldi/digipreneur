@@ -85,7 +85,7 @@
                             Dont Have account yet ? Sign Up Using
                         </span>
 
-                        <a href="#" class="txt2">
+                        <a href="{{ route('register') }}" class="txt2">
                             Register
                         </a>
                     </div>

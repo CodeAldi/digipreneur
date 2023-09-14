@@ -17,7 +17,7 @@
     
                         <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Education is the
                             Mother of Leadership</h1>
-                        <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#"
+                        <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="{{ route('login') }}"
                                 class="btn btn-secondary">Explore courses</a></p>
     
                     </div>
