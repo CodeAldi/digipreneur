@@ -9,11 +9,11 @@ class LoginController extends Controller
 {
     function login() : View {
         // render login page
-        return view('login');
+        return view('authentication/login');
     }
 
     function register() : View {
         // login register page
-        return view('register');
+        return view('authentication/register');
     }
 }

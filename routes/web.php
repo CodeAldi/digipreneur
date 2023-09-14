@@ -19,7 +19,7 @@ Route::controller(LandingPageController::class)->group(function(){
     Route::get('/','index');
 });
 
-Route::controller(LoginController::class)->group(function(){
-    Route::get('/login','login');
-    Route::get('/register','register');
+Route::controller(LoginController::class)->middleware('guest')->group(function(){
+    Route::get('login','login');
+    Route::get('register','register');
 });
