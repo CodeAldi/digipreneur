@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(LandingPageController::class)->group(function(){
     Route::get('/','index');
+});
+
+Route::controller(LoginController::class)->group(function(){
+    Route::get('/login','login');
+    Route::get('/register','register');
 });
