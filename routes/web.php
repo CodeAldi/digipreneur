@@ -20,6 +20,6 @@ Route::controller(LandingPageController::class)->group(function(){
 });
 
 Route::controller(LoginController::class)->middleware('guest')->group(function(){
-    Route::get('login','login');
-    Route::get('register','register');
+    Route::get('login','login')->name('login');
+    Route::get('register','register')->name('register');
 });
