@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Login V4</title>
+    <title>{{ env('app_name') }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="login-asset/images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="{{ asset('landing/favicon.png') }}" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="login-asset/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -39,10 +39,10 @@
                         Login
                     </span>
 
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
-                        <span class="label-input100">Username</span>
-                        <input class="input100" type="text" name="username" placeholder="Type your username">
-                        <span class="focus-input100" data-symbol="&#xf206;"></span>
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Email is reauired">
+                        <span class="label-input100">Email</span>
+                        <input class="input100" type="email" name="username" placeholder="Type your username">
+                        <span class="focus-input100" data-symbol="&#xf15a;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
@@ -80,7 +80,7 @@
                         </a>
                     </div> --}}
 
-                    <div class="flex-col-c p-t-155">
+                    <div class="flex-col-c p-t-25">
                         <span class="txt1 p-b-17">
                             Dont Have account yet ? Sign Up Using
                         </span>

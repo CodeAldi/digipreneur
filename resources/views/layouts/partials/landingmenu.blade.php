@@ -13,11 +13,11 @@
                 </div>
 
                 <div class="col-6 col-lg-3 text-right">
-                    <a href="login.html" class="small mr-3">
+                    <a href="{{ route('login') }}" class="small mr-3">
                         <span class="icon-lock"></span>
                         Log In
                     </a>
-                    <a href="register.html" class="small">
+                    <a href="{{ route('register') }}" class="small">
                         <span class="icon-person"></span>
                         Register
                     </a>

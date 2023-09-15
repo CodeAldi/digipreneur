@@ -37,7 +37,7 @@ Pinterest: https://pinterest.com/Untree_co/ --}}
     <link rel="stylesheet" href="{{ asset('landing/css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
 
-    <title>Learner Free Bootstrap Template by Untree.co</title>
+    <title>{{ env('app_name') }}</title>
 </head>
 
 <body>

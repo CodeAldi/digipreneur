@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Login V4</title>
+    <title>{{ env('app_name') }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="login-asset/images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="{{ asset('landing/favicon.png') }}" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="login-asset/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -80,7 +80,7 @@
                         </a>
                     </div> --}}
 
-                    <div class="flex-col-c p-t-155">
+                    <div class="flex-col-c p-t-25">
                         <span class="txt1 p-b-17">
                             Dont Have account yet ? Sign Up Using
                         </span>
