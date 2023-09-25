@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -22,4 +23,8 @@ Route::controller(LandingPageController::class)->group(function(){
 Route::controller(LoginController::class)->middleware('guest')->group(function(){
     Route::get('login','login')->name('login');
     Route::get('register','register')->name('register');
+});
+
+Route::controller(AdminController::class)->group(function(){
+    Route::get('admin','index')->name('admin.home');
 });
