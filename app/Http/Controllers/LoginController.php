@@ -32,7 +32,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('dashboard.home');
+            return redirect()->intended('/admin');
         }
 
         return back()->withErrors([

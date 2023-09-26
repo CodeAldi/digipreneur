@@ -20,11 +20,11 @@ Route::controller(LandingPageController::class)->group(function(){
     Route::get('/','index');
 });
 
-Route::controller(LoginController::class)->middleware('guest')->group(function(){
-    Route::get('login','login')->name('login');
-    Route::get('register','register')->name('register');
-    Route::post('authentication', 'authenticate')->name('authentication');
-    Route::get('logout','logout')->name('logout');
+Route::controller(LoginController::class)->group(function(){
+    Route::get('login','login')->middleware('guest')->name('login');
+    Route::get('register','register')->middleware('guest')->name('register');
+    Route::post('authentication', 'authenticate')->middleware('guest')->name('authentication');
+    Route::get('logout','logout')->middleware('auth')->name('logout');
 });
 
 Route::controller(AdminController::class)->middleware('auth')->group(function(){
