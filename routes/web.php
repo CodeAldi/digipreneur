@@ -23,8 +23,10 @@ Route::controller(LandingPageController::class)->group(function(){
 Route::controller(LoginController::class)->middleware('guest')->group(function(){
     Route::get('login','login')->name('login');
     Route::get('register','register')->name('register');
+    Route::post('authentication', 'authenticate')->name('authentication');
+    Route::get('logout','logout')->name('logout');
 });
 
-Route::controller(AdminController::class)->group(function(){
+Route::controller(AdminController::class)->middleware('auth')->group(function(){
     Route::get('admin','index')->name('admin.home');
 });
