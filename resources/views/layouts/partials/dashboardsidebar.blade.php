@@ -26,13 +26,13 @@
         </li>
         <li class="menu-item">
             <a href="{{ route('admin.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bx-user-voice"></i>
                 <div data-i18n="Analytics">Instruktur</div>
             </a>
         </li>
         <li class="menu-item">
             <a href="{{ route('admin.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bx-group"></i>
                 <div data-i18n="Analytics">Peserta</div>
             </a>
         </li>
@@ -41,14 +41,14 @@
         </li>
         <li class="menu-item">
             <a href="{{ route('admin.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Pelatihan</div>
             </a>
         </li>
         <li class="menu-item">
             <a href="{{ route('admin.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Kelas</div>
+                <i class="menu-icon tf-icons bx bxs-chalkboard"></i>
+                <div data-i18n="Analytics">Kelas-Kelas Pelatihan</div>
             </a>
         </li>
     </ul>
