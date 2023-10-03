@@ -12,7 +12,11 @@ class InstructorController extends Controller
      */
     public function index()
     {
-        //
+        $instruktur = Instructor::all();
+        // dd($instruktur);
+        return view('instruktur.index',[
+            'dataInstruktur'=>$instruktur
+        ]);
     }
 
     /**
@@ -20,7 +24,7 @@ class InstructorController extends Controller
      */
     public function create()
     {
-        //
+        return view('instruktur.create');
     }
 
     /**

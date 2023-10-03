@@ -25,7 +25,7 @@
             <span class="menu-header-text">Accounts</span>
         </li>
         <li class="menu-item">
-            <a href="{{ route('admin.home') }}" class="menu-link">
+            <a href="{{ route('admin.instruktur.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user-voice"></i>
                 <div data-i18n="Analytics">Instruktur</div>
             </a>

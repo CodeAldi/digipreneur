@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +31,11 @@ Route::controller(LoginController::class)->group(function(){
 
 Route::controller(AdminController::class)->middleware('auth')->group(function(){
     Route::get('admin','index')->name('admin.home');
+});
+
+Route::middleware('auth')->group(function(){
+    Route::get('admin/user/all',[UserController::class, 'index'])->name('admin.user.index');
+    // instruktur
+    Route::get('admin/instruktur/index',[InstructorController::class, 'index'])->name('admin.instruktur.index');
+    Route::get('admin/instruktur/create',[InstructorController::class, 'create'])->name('admin.instruktur.create');
 });
