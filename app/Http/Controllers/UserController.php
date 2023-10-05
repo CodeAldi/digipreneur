@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Instructor;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,26 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $nama = $request->nama;
+        $email = $request->email;
+        $password = $request->password;
+        $role = $request->role;
+        
+        $user = User::create([
+            'nama'      => $nama,
+            'email'     => $email,
+            'password'  => $password,
+            'role'      => $role,
+        ]);
+
+        $newuserid = $user->id;
+
+        if ($role == 'instruktur') {
+            return redirect()->route();
+        }
+
+        dd($nama,$email,$password);
     }
 
     /**
