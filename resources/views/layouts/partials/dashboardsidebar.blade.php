@@ -15,7 +15,7 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item">
+        <li class="menu-item {{ (Request::RouteIs('admin.home')) ? 'active' : '' }}">
             <a href="{{ route('admin.home') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
@@ -24,7 +24,7 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Accounts</span>
         </li>
-        <li class="menu-item">
+        <li class="menu-item {{ (Request::RouteIs('admin.instruktur.*')) ? 'active' : '' }}">
             <a href="{{ route('admin.instruktur.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user-voice"></i>
                 <div data-i18n="Analytics">Instruktur</div>
