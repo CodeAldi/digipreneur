@@ -36,7 +36,7 @@ class UserController extends Controller
         $role = $request->role;
         
         $user = User::create([
-            'nama'      => $nama,
+            'name'      => $nama,
             'email'     => $email,
             'password'  => $password,
             'role'      => $role,
@@ -45,7 +45,7 @@ class UserController extends Controller
         $newuserid = $user->id;
 
         if ($role == 'instruktur') {
-            return redirect()->route();
+            return redirect()->route('admin.instruktur.store',['id'=>$newuserid]);
         }
 
         dd($nama,$email,$password);

@@ -117,7 +117,7 @@ data-template="vertical-menu-template-free"
     <script src="{{ asset('dashboard-assets/js/main.js') }}"></script>
 
     <!-- Page JS -->
-
+    <script src="{{ asset('dashboard-assets/js/ui-toasts.js') }}"></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>

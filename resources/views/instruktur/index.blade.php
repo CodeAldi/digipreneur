@@ -1,6 +1,17 @@
 @extends('layouts.dashboard')
 
 @section('content')
+    @if (session('statusSuccess'))
+        <div class="bs-toast toast toast-placement-ex m-2 fade bg-success top-0 end-0 show" role="alert" aria-live="assertive" aria-atomic="true"
+            data-delay="2000">
+            <div class="toast-header">
+                <i class="bx bx-bell me-2"></i>
+                <div class="me-auto fw-semibold">Success</div>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">{{ session('statusSusccess') }}</div>
+        </div>
+    @endif
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -26,8 +37,8 @@
                     <tbody class="table-border-bottom-0">
                         @forelse ($dataInstruktur as $item)
                             <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Instruktur pertama</strong></td>
-                                <td>contoh@email.com</td>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> {{ $item->user['name'] }} </td>
+                                <td>{{ $item->user['email'] }}</td>
                                 <td><span class="badge bg-label-primary me-1">Active</span></td>
                                 <td>
                                     <div class="dropdown">

@@ -30,7 +30,11 @@ class InstructorController extends Controller
 
     public function store(int $id)
     {
-        //
+        // dd('berhasil toss id = ',$id);
+        Instructor::create([
+            'user_id' => $id,
+        ]);
+        return redirect('admin/instruktur/index')->with('statusSuccess','data berhasil disimpan');
     }
 
     /**

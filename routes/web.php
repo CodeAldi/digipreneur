@@ -39,4 +39,5 @@ Route::middleware('auth')->group(function(){
     // instruktur
     Route::get('admin/instruktur/index',[InstructorController::class, 'index'])->name('admin.instruktur.index');
     Route::get('admin/instruktur/create',[InstructorController::class, 'create'])->name('admin.instruktur.create');
+    Route::get('admin/instruktur/store/{id}',[InstructorController::class, 'store'])->name('admin.instruktur.store');
 });
