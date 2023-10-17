@@ -12,7 +12,7 @@
             <div class="toast-body">{{ session('statusSusccess') }}</div>
         </div>
     @endif
-    <div class="card">
+    <div class="card h-100">
         <div class="card-header">
             <div class="row">
                 <div class="col-md-8">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="table-responsive text-nowrap">
+            <div class="table-responsive text-nowrap h-100">
                 <table class="table table-hover">
                     <thead>
                         <tr>
