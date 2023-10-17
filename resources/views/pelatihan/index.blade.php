@@ -5,11 +5,11 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-md-8">
-                    <h5>Manage : Topik Pelatihan</h5>
+                    <h5>Manage : Materi Pelatihan</h5>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ route('admin.pelatihan.create') }}" class="btn btn-primary float-end"><i
-                            class='menu-icon bx bxs-plus-square'></i>Tambah Topik Pelatihan</a>
+                            class='menu-icon bx bxs-plus-square'></i>Tambah Materi Pelatihan</a>
                 </div>
             </div>
         </div>
@@ -19,8 +19,8 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Judul Topik</th>
-                            <th>Sub-Topik</th>
+                            <th>Judul Materi</th>
+                            <th>Sub-Materi</th>
                             <th>Action</th>
                         </tr>
                     </thead>
