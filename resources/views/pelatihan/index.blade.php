@@ -5,11 +5,11 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-md-8">
-                    <h5>Manage : Pelatihan</h5>
+                    <h5>Manage : Topik Pelatihan</h5>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ '#' }}" class="btn btn-primary float-end"><i
-                            class='menu-icon bx bxs-plus-square'></i>Tambah Pelatihan</a>
+                            class='menu-icon bx bxs-plus-square'></i>Tambah Topik Pelatihan</a>
                 </div>
             </div>
         </div>
@@ -18,9 +18,9 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Nama</th>
-                            <th>email</th>
-                            <th>status</th>
+                            <th>No</th>
+                            <th>Judul Topik</th>
+                            <th>Sub-Topik</th>
                             <th>Action</th>
                         </tr>
                     </thead>

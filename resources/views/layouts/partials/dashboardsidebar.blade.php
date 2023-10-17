@@ -39,15 +39,15 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">training & class</span>
         </li>
-        <li class="menu-item">
+        <li class="menu-item {{ (Request::RouteIs('admin.pelatihan.*')) ? 'active' : '' }}">
             <a href="{{ route('admin.pelatihan.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-graduation"></i>
-                <div data-i18n="Analytics">Pelatihan</div>
+                <i class="menu-icon tf-icons bx bx-library"></i>
+                <div data-i18n="Analytics">Materi Pelatihan</div>
             </a>
         </li>
         <li class="menu-item">
             <a href="{{ route('admin.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-chalkboard"></i>
+                <i class="menu-icon tf-icons bx bxs-school"></i>
                 <div data-i18n="Analytics">Kelas-Kelas Pelatihan</div>
             </a>
         </li>
