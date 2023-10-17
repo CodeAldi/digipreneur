@@ -40,7 +40,7 @@
             <span class="menu-header-text">training & class</span>
         </li>
         <li class="menu-item">
-            <a href="{{ route('admin.home') }}" class="menu-link">
+            <a href="{{ route('admin.pelatihan.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Pelatihan</div>
             </a>

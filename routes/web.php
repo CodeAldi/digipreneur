@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminPelatihanController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
@@ -40,4 +41,8 @@ Route::middleware('auth')->group(function(){
     Route::get('admin/instruktur/index',[InstructorController::class, 'index'])->name('admin.instruktur.index');
     Route::get('admin/instruktur/create',[InstructorController::class, 'create'])->name('admin.instruktur.create');
     Route::get('admin/instruktur/store/{id}',[InstructorController::class, 'store'])->name('admin.instruktur.store');
+    // pelatihan
+    Route::controller(AdminPelatihanController::class)->group(function(){
+        Route::get('admin/pelatihan/index','index')->name('admin.pelatihan.index');
+    });
 });
