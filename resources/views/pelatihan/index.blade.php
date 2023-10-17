@@ -8,7 +8,7 @@
                     <h5>Manage : Topik Pelatihan</h5>
                 </div>
                 <div class="col-md-4">
-                    <a href="{{ '#' }}" class="btn btn-primary float-end"><i
+                    <a href="{{ route('admin.pelatihan.create') }}" class="btn btn-primary float-end"><i
                             class='menu-icon bx bxs-plus-square'></i>Tambah Topik Pelatihan</a>
                 </div>
             </div>

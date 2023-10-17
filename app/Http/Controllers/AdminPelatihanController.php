@@ -19,7 +19,7 @@ class AdminPelatihanController extends Controller
      */
     public function create()
     {
-        //
+        return view('pelatihan.create');
     }
 
     /**
