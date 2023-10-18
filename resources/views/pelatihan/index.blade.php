@@ -20,18 +20,18 @@
                         <tr>
                             <th>No</th>
                             <th>Judul Materi</th>
-                            <th>Sub-Materi</th>
-                            <th>Action</th>
+                            <th class="text-start">Sub-Materi</th>
+                            <th class="text-end">Action</th>
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                         <tr>
-                            <td colspan="4" class="bg-warning text-white fs-5">Data Masih Kosong</td>
+                            <td colspan="4" class="bg-warning text-white text-center fs-5">NO DATA</td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Materi 1</td>
-                            <td>
+                            <td class="text-start">
                                 <ol>
                                     <li>sub topik 1</li>
                                     <li>sub topik 2</li>
@@ -40,14 +40,16 @@
                                     <li>sub topik 5</li>
                                 </ol>
                             </td>
-                            <td>
+                            <td class="text-end">
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                         <i class="bx bx-dots-vertical-rounded"></i>
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
-                                            Edit</a>
+                                            Edit Judul Materi</a>
+                                        <a class="dropdown-item" href="javascript:void(0);"><i class="bx bxs-plus-circle me-1"></i>
+                                            Add or Edit Sub-Materi</a>
                                         <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i>
                                             Delete</a>
                                     </div>
@@ -57,23 +59,19 @@
                         <tr>
                             <td>2</td>
                             <td>Materi 2</td>
-                            <td>
-                                <ol>
-                                    <li>sub topik 1</li>
-                                    <li>sub topik 2</li>
-                                    <li>sub topik 3</li>
-                                    <li>sub topik 4</li>
-                                    <li>sub topik 5</li>
-                                </ol>
+                            <td class="text-start">
+                                <span class="badge bg-warning mx-3">No Data</span>
                             </td>
-                            <td>
+                            <td class="text-end">
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                         <i class="bx bx-dots-vertical-rounded"></i>
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
-                                            Edit</a>
+                                            Edit Judul Materi</a>
+                                        <a class="dropdown-item" href="javascript:void(0);"><i class="bx bxs-plus-circle me-1"></i>
+                                            Add or Edit Sub-Materi</a>
                                         <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i>
                                             Delete</a>
                                     </div>
