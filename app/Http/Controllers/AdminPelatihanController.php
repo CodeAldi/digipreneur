@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MateriPelatihan;
 use Illuminate\Http\Request;
 
 class AdminPelatihanController extends Controller
@@ -11,7 +12,10 @@ class AdminPelatihanController extends Controller
      */
     public function index()
     {
-        return view('pelatihan.index');
+        $materiPelatihan = MateriPelatihan::all();
+        return view('pelatihan.index',[
+            'materiPelatihan'=>$materiPelatihan,
+        ]);
     }
 
     /**
@@ -27,7 +31,13 @@ class AdminPelatihanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'materi_pelatihan' => 'required|string|max:255|unique:materi_pelatihan',
+        ]);
+        $materiPelatihan = new MateriPelatihan();
+        $materiPelatihan->materi_pelatihan = $request->materi_pelatihan;
+        $materiPelatihan->save();
+        return redirect()->route('admin.pelatihan.index')->with('success','Materi pelatihan berhasil ditambahkan [silahkan ini sub-materi]');
     }
 
     /**

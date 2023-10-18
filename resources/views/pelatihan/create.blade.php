@@ -4,12 +4,15 @@
     <div class="card col-8 text-center mx-auto">
         <h5 class="card-header">Create Materi Pelatihan</h5>
         <div class="card-body">
-            <form method="POST" action="#">
+            <form method="POST" action="{{ route('admin.pelatihan.store') }}">
                 @csrf
                 <div class="row mb-3">
                     <label class="col-sm-2 col-form-label" for="judul">Judul Materi Pelatihan</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="judul" name="judul_materi" />
+                        <input type="text" class="form-control @error('materi_pelatihan') is-invalid @enderror" id="judul" name="materi_pelatihan" />
+                        @error('materi_pelatihan')
+                        <div class="form-text text-start text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
                 <div class="row d-flex justify-content-end">

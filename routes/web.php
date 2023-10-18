@@ -45,5 +45,6 @@ Route::middleware('auth')->group(function(){
     Route::controller(AdminPelatihanController::class)->group(function(){
         Route::get('admin/pelatihan/index','index')->name('admin.pelatihan.index');
         Route::get('admin/pelatihan/create','create')->name('admin.pelatihan.create');
+        Route::post('admin/pelatihan/store','store')->name('admin.pelatihan.store');
     });
 });
