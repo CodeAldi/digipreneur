@@ -41,7 +41,13 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->materi_pelatihan }}</td>
                                 <td class="text-start">
-                                    <span class="badge bg-warning mx-3">No Data</span>
+                                    <ol>
+                                    @forelse ($item->sub_materi()->get() as $sub)
+                                        <li>{{ $sub->sub_materi }}</li>
+                                    @empty
+                                        <span class="badge bg-warning mx-3">No Data</span>
+                                        </ol>
+                                    @endforelse
                                 </td>
                                 <td class="text-end">
                                     <div class="dropdown">

@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="card h-100">
-        <h5 class="card-header text-capitalize">{{ $materinya->materi_pelatihan }}</h5>
+        <div class="card-header">
+            <h5 class="text-capitalize">{{ $materinya->materi_pelatihan }}</h5>
+        </div>
         <div class="card-body">
             <form action="{{ route('admin.subMateri.store') }}" method="POST" class="mb-4">
                 @csrf
