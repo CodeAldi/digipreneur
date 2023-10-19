@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminPelatihanController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SubMateriController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,7 +42,7 @@ Route::middleware('auth')->group(function(){
     Route::get('admin/instruktur/index',[InstructorController::class, 'index'])->name('admin.instruktur.index');
     Route::get('admin/instruktur/create',[InstructorController::class, 'create'])->name('admin.instruktur.create');
     Route::get('admin/instruktur/store/{id}',[InstructorController::class, 'store'])->name('admin.instruktur.store');
-    // pelatihan
+    // materi pelatihan
     Route::controller(AdminPelatihanController::class)->group(function(){
         Route::get('admin/pelatihan/index','index')->name('admin.pelatihan.index');
         Route::get('admin/pelatihan/create','create')->name('admin.pelatihan.create');
@@ -49,5 +50,11 @@ Route::middleware('auth')->group(function(){
         Route::get('admin/pelatihan/{id}/show','show')->name('admin.pelatihan.show');
         Route::get('admin/pelatihan/{id}/edit','edit')->name('admin.pelatihan.edit');
         Route::post('admin/pelatihan/{id}/update','update')->name('admin.pelatihan.update');
+    });
+    // sub materi pelatihan
+    Route::controller(SubMateriController::class)->group(function(){
+        Route::get('admin/sub-materi-pelatihan/{materi}/index','index')->name('admin.subMateri.index');
+        Route::post('admin/sub-materi-pelatihan/store','store')->name('admin.subMateri.store');
+        Route::get('admin/sub-materi-pelatihan/{sub_materi}/delete','destroy')->name('admin.subMateri.delete');
     });
 });
