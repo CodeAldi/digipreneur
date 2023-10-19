@@ -45,7 +45,7 @@ class AdminPelatihanController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('pelatihan.show');
     }
 
     /**
@@ -53,7 +53,10 @@ class AdminPelatihanController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $pelatihan = MateriPelatihan::find($id);
+        return view('pelatihan.edit',[
+            'pelatihan' => $pelatihan,
+        ]);
     }
 
     /**
@@ -61,7 +64,13 @@ class AdminPelatihanController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $materiPelatihan = MateriPelatihan::find($id);
+        $validatedData = $request->validate([
+            'materi_pelatihan' => 'required|string|max:255|unique:materi_pelatihan',
+        ]);
+        $materiPelatihan->materi_pelatihan = $request->materi_pelatihan;
+        $materiPelatihan->save();
+        return redirect()->route('admin.pelatihan.index')->with('success', 'Materi pelatihan berhasil diupdate');
     }
 
     /**

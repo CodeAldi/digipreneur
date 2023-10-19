@@ -46,5 +46,8 @@ Route::middleware('auth')->group(function(){
         Route::get('admin/pelatihan/index','index')->name('admin.pelatihan.index');
         Route::get('admin/pelatihan/create','create')->name('admin.pelatihan.create');
         Route::post('admin/pelatihan/store','store')->name('admin.pelatihan.store');
+        Route::get('admin/pelatihan/{id}/show','show')->name('admin.pelatihan.show');
+        Route::get('admin/pelatihan/{id}/edit','edit')->name('admin.pelatihan.edit');
+        Route::post('admin/pelatihan/{id}/update','update')->name('admin.pelatihan.update');
     });
 });

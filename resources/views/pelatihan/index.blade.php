@@ -12,7 +12,7 @@
     <div class="toast-body">{{ session('success') }}</div>
 </div>
 @endif
-    <div class="card">
+    <div class="card h-100">
         <div class="card-header">
             <div class="row">
                 <div class="col-md-8">
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="table-responsive text-wrap">
+            <div class="table-responsive text-wrap h-100">
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -49,7 +49,7 @@
                                             <i class="bx bx-dots-vertical-rounded"></i>
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
+                                            <a class="dropdown-item" href="{{ route('admin.pelatihan.edit',['id'=>$item->id]) }}"><i class="bx bx-edit-alt me-1"></i>
                                                 Edit Judul Materi</a>
                                             <a class="dropdown-item" href="javascript:void(0);"><i class="bx bxs-plus-circle me-1"></i>
                                                 Add or Edit Sub-Materi</a>
