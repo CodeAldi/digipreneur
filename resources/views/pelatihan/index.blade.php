@@ -59,7 +59,7 @@
                                                 Edit Judul Materi</a>
                                             <a class="dropdown-item" href="{{ route('admin.subMateri.index',['materi'=>$item->id]) }}"><i class="bx bxs-plus-circle me-1"></i>
                                                 Add or Edit Sub-Materi</a>
-                                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i>
+                                            <a class="dropdown-item" href="{{ route('admin.pelatihan.delete',['id'=>$item->id]) }}"><i class="bx bx-trash me-1"></i>
                                                 Delete</a>
                                         </div>
                                     </div>

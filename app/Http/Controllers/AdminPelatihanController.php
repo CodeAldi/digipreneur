@@ -78,6 +78,9 @@ class AdminPelatihanController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $materiPelatihan = MateriPelatihan::find($id);
+        $materiPelatihan->sub_materi()->delete();
+        $materiPelatihan->delete();
+        return redirect()->route('admin.pelatihan.index')->with('success', 'Materi pelatihan berhasil dihapus');
     }
 }
