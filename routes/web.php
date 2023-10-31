@@ -27,6 +27,7 @@ Route::controller(LandingPageController::class)->group(function(){
 Route::controller(LoginController::class)->group(function(){
     Route::get('login','login')->middleware('guest')->name('login');
     Route::get('register','register')->middleware('guest')->name('register');
+    Route::post('register/store','storeRegister')->middleware('guest')->name('register.store');
     Route::post('authentication', 'authenticate')->middleware('guest')->name('authentication');
     Route::get('logout','logout')->middleware('auth')->name('logout');
 });
@@ -35,7 +36,7 @@ Route::controller(AdminController::class)->middleware('auth')->group(function(){
     Route::get('admin','index')->name('admin.home');
 });
 
-Route::middleware('auth')->group(function(){
+Route::middleware(['auth', 'role:admin'])->group(function(){
     Route::get('admin/user/all',[UserController::class, 'index'])->name('admin.user.index');
     Route::post('admin/user/store', [UserController::class, 'store'])->name('admin.user.store');
     // instruktur

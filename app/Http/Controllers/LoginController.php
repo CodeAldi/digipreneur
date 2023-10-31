@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +18,21 @@ class LoginController extends Controller
     function register() : View {
         // login register page
         return view('authentication/register');
+    }
+
+    public function storeRegister(Request $request) {
+        $nama = $request->nama;
+        $email = $request->email;
+        $password = $request->password;
+        $role = $request->role;
+
+        $user = User::create([
+            'name'      => $nama,
+            'email'     => $email,
+            'password'  => $password,
+            'role'      => $role,
+        ]);
+        return redirect()->route('login')->with('success','Pendaftaran Berhasil, Silahkan Login');
     }
 
     /**

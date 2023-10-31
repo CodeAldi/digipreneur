@@ -44,11 +44,7 @@ class UserController extends Controller
 
         $newuserid = $user->id;
 
-        if ($role == 'instruktur') {
-            return redirect()->route('admin.instruktur.store',['id'=>$newuserid]);
-        }
-
-        dd($nama,$email,$password);
+        return redirect()->route('admin.instruktur.store',['id'=>$newuserid]);
     }
 
     /**

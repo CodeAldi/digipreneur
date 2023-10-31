@@ -21,6 +21,7 @@
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
+        @if (auth()->user()->hasRole('admin'))
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Accounts</span>
         </li>
@@ -51,5 +52,39 @@
                 <div data-i18n="Analytics">Kelas-Kelas Pelatihan</div>
             </a>
         </li>
+            
+        @elseif(auth()->user()->hasRole('instruktur'))
+        <li class="menu-item">
+            <a href="{{ route('admin.home') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Analytics">Mengajar</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('admin.home') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-group"></i>
+                <div data-i18n="Analytics">Data Peserta</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('admin.home') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Analytics">Data Tugas Peserta</div>
+            </a>
+        </li>
+        @elseif(auth()->user()->hasRole('peserta'))
+            <li class="menu-item">
+                <a href="{{ route('admin.home') }}" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-detail"></i>
+                    <div data-i18n="Analytics">Pembelajaran</div>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ route('admin.home') }}" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-store"></i>
+                    <div data-i18n="Analytics">Katalog Produk ku</div>
+                </a>
+            </li>
+        @endif
     </ul>
 </aside>

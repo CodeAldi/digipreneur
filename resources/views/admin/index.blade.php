@@ -3,7 +3,7 @@
 @section('content')
         <div class="card h-100">
             <h5 class="card-header">
-                Dashboard Admin
+                Dashboard {{ auth()->user()->role }}
             </h5>
         </div>
 @endsection
